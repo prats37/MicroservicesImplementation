@@ -1,0 +1,4 @@
+server.port=6000
+spring-application-name=Config-Client
+management.server.port=7100
+management.endpoints.web.exposure.include=refresh
