@@ -1,7 +1,0 @@
-package com.wipro.springconfigdemo;
-
-@RestController
-@RefreshScope
-public class MessageRestController {
-
-}

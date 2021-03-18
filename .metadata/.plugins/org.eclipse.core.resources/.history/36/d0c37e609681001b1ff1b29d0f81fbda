@@ -1,4 +1,0 @@
-server.port=5000
-spring-application-name=SpringBootConfigClient
-spring.cloud.config.server.git.uri=file://${user.dir}/
-

@@ -1,3 +1,0 @@
-spring.application.name=SpringCloudConfigClient
-spring.profiles.active=production
-spring.cloud.config.uri=http://localhost:5000

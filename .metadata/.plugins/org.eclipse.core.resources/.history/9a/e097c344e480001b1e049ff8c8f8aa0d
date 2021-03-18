@@ -1,4 +1,0 @@
-server.port=5000
-spring-application-name=Spring-Config-Client
-spring.cloud.config.server.git.uri="${/home/pratyush/Git Repo/Spring-Config-Properties}"
-
