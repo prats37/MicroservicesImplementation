@@ -1,0 +1,16 @@
+package com.example.ribbondemo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class RibbonEurekaClientApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RibbonEurekaClientApplication.class, args);
+		System.out.println("--- Eureka Ribbon Client App is up and ready at port 6701");
+	}
+
+}

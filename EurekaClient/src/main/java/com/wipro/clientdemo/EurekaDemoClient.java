@@ -27,10 +27,19 @@ public class EurekaDemoClient {
 	public String invokeService() {
 		RestTemplate restTemplate=restTemplateBuilder.build();
 		//Using Eureka Server
-		InstanceInfo instanceInfo=eurekaClient.getNextServerFromEureka("service1-app",false);
-		String baseUrl=instanceInfo.getHomePageUrl();
-		baseUrl=baseUrl+"/greet";
+		/*
+		 * InstanceInfo
+		 * instanceInfo=eurekaClient.getNextServerFromEureka("service1-app",false);
+		 * String baseUrl=instanceInfo.getHomePageUrl(); baseUrl=baseUrl+"/greet";
+		 * return restTemplate.getForObject(baseUrl, String.class);
+		 */
+		//Using Zuul API Gateway
+		InstanceInfo instanceInfo=eurekaClient.getNextServerFromEureka("zuul-gateway",false);
+		String baseUrl=instanceInfo.getHomePageUrl(); 
+		baseUrl=baseUrl+"/api/service1app/greet";
+		System.out.println(baseUrl);
 		return restTemplate.getForObject(baseUrl, String.class);
+		
 		
 	}
 
