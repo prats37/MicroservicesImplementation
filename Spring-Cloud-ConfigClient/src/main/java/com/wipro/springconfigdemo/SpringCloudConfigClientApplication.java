@@ -9,7 +9,7 @@ public class SpringCloudConfigClientApplication {
 	public static void main(String[] args) {
 		System.out.println("--- Starting Client application---");
 		SpringApplication.run(SpringCloudConfigClientApplication.class, args);
-		System.out.println("--- CSpringCoundConfigClientApplication is running at port 6000---");
+		System.out.println("--- SpringCoundConfigClientApplication is running at port 6000 ---");
 	}
 
 }
